@@ -1,0 +1,22 @@
+* {
+    font-family: sans-serif;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+main {
+    padding-left: 10px;
+}
+
+article {
+    padding-left: 10px;
+}
+
+code {
+    font-family: monospace;
+    font-size:large;
+    padding-left: 10px;
+}
