@@ -2,13 +2,14 @@
     font-family: sans-serif;
 }
 
+main {
+    width: 70vw;
+    padding-left: 10px;
+}
+
 header {
     font-size: xx-large;
     font-weight: bold;
-}
-
-main {
-    padding-left: 10px;
 }
 
 article {
@@ -17,6 +18,13 @@ article {
 
 code {
     font-family: monospace;
+    background-color: #e9e9e9;
+    display: block;
     font-size:large;
-    padding-left: 10px;
+    padding: 5px 0 5px 10px;
+    border-left: black 3px solid;
+}
+
+.text-bold {
+    font-weight: bold;
 }
