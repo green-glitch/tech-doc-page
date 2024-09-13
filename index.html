@@ -34,7 +34,7 @@ SOFTWARE. -->
             <header>Introduction</header>
             <article>
             <p>
-                <span class="text-bold">Git</span> is a powerful, distributed version control system that enables tracking changes in source code and collaboration on projects. With Git, you can restore previous versions of files, compare changes, and efficiently work in teams by merging different code variations. Git is extremely popular in the programming community but can also be used to manage various types of files.
+                <span class="text-bold">Git</span> is a powerful, distributed version control system that enables efficient management of source code for projects. Think of Git as a library where all versions of your work are stored. Instead of a single copy of a book (a version of your code), you have an entire shelf with different editions, each with its own date and description of changes. This allows you to revert to any point in the project's history, compare different versions, and even work on multiple ideas simultaneously without risking data loss.
             </p>
             </article>
         </section>
@@ -42,15 +42,12 @@ SOFTWARE. -->
             <header>Git as a Version Control System</header>
             <article>
             <p>
-                A <span class="text-bold">version control system</span> is a tool used to manage changes in files. It allows you to track the history of changes, restore previous versions, compare different variations, and collaborate on projects in teams.
-            </p>
-            <p>
-                There are three main methods of version control:
+                A <span class="text-bold">version control system (VCS)</span> is a tool used to track changes in files, most commonly in software development projects. There are three main types of version control:
             </p>
             <ul>
-                <li><span class="text-bold">Local:</span> The entire history of changes is stored on the user's local computer.</li>
-                <li><span class="text-bold">Centralized:</span> There is one central server where the main copy of the project is stored. Users download working copies and send their changes to the server.</li>
-                <li><span class="text-bold">Distributed:</span> Each user has a full copy of the repository, allowing for offline work and independence of individual copies. Git is an example of a distributed system.</li>
+                <li><span class="text-bold">Local:</span> All changes are stored on a local computer. This is the simplest but least secure method.</li>
+                <li><span class="text-bold">Centralized:</span> There is a single central server where all file versions are stored. Each user has access to the same copy.</li>
+                <li><span class="text-bold">Distributed:</span> Each user has a complete copy of the repository on their computer. This allows for offline work and easier collaboration within teams. Git is an example of such a system.</li>
             </ul>
             </article>            
         </section>
@@ -58,24 +55,28 @@ SOFTWARE. -->
             <header>How to install</header>
             <article>
             <ul>
-                <li>To install Git in Windows, download the installer from https://git-scm.com/download/win and follow the on-screen instructions.</li>
-                <li>To install Git in Linux, launch a terminal and use one of the following commands:
-                    <ul>
-                        <li><div><span class="text-bold">Debian, Ubuntu</span></div>
-                        <code>sudo apt-get install git</code></li>
-                        <li><div><span class="text-bold">Fedora, CentOS</span></div>
-                        <code>sudo dnf install git</code></li>
-                    </ul>
+                <li><p><span class="text-bold">Linux (Debian, Fedora):</span></p>
+                <code>sudo apt install git # Debian<br>sudo dnf install git # Fedora</code></li>
+                <li><span class="text-bold">Windows:</span> Get the installer from the official Git website and follow the steps.</li>
+                <li>
+                    <p><span class="text-bold">macOS:</span> You can install Git using Homebrew:</p>
+                    <code>brew install git</code>
+                    <p>Or you can download the installer from the official website.</p>
                 </li>
-                <li>To install Git in Mac, go to https://git-scm.com/download/mac and follow the on-page instructions.</li>
             </ul>
             </article>
         </section>
         <section class="main-section">
-            <header></header>
+            <header>New Repository</header>
+            <article>
+                <p>A <span class="text-bold">repository</span> is where all the information about a project is stored, including files, change history, and configuration. To create a new, local repository, navigate to the desired directory in your terminal and execute the following command:</p>
+            </article>
         </section>
         <section class="main-section">
-            <header></header>
+            <header>Reference</header>
+            <article>
+                <p>For more information about Git, read "Pro Git" book, written by Scott Chacon and Ben Straub and published by Apress. This book is available <a href="https://git-scm.com/book/en/v2">here</a>.</p>
+            </article>
         </section>
     </main>
 </body>

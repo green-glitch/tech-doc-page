@@ -37,6 +37,10 @@ article {
     padding-left: 10px;
 }
 
+li {
+    margin: 10px 0;
+}
+
 code {
     font-family: monospace;
     background-color: #e9e9e9;
