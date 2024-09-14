@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Tech Doc Page</title>
 </head>
 <body>
-    <h1>In progress...</h1>
-    <progress value="40" max="100">40%</progress>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+            <p>
+                <span class="text-bold">Git</span> is a powerful, distributed version control system that enables efficient management of source code for projects. Think of Git as a library where all versions of your work are stored. Instead of a single copy of a book (a version of your code), you have an entire shelf with different editions, each with its own date and description of changes. This allows you to revert to any point in the project's history, compare different versions, and even work on multiple ideas simultaneously without risking data loss.
+            </p>
+            </article>
+        </section>
+        <section class="main-section" id="Git_as_a_Version_Control_System">
+            <header>Git as a Version Control System</header>
+            <article>
+            <p>
+                A <span class="text-bold">version control system (VCS)</span> is a tool used to track changes in files, most commonly in software development projects. There are three main types of version control:
+            </p>
+            <ul>
+                <li><span class="text-bold">Local:</span> All changes are stored on a local computer. This is the simplest but least secure method.</li>
+                <li><span class="text-bold">Centralized:</span> There is a single central server where all file versions are stored. Each user has access to the same copy.</li>
+                <li><span class="text-bold">Distributed:</span> Each user has a complete copy of the repository on their computer. This allows for offline work and easier collaboration within teams. Git is an example of such a system.</li>
+            </ul>
+            </article>            
+        </section>
+        <section class="main-section" id="How_to_install">
+            <header>How to install</header>
+            <article>
+            <ul>
+                <li><p><span class="text-bold">Linux:</span></p>
+                <code>sudo apt install git # Debian</code>
+                <p>or</p>
+                <code>dnf install git # Fedora</code></li>
+                <li><span class="text-bold">Windows:</span> Get the installer from the official Git website and follow the steps.</li>
+                <li>
+                    <p><span class="text-bold">macOS:</span> You can install Git using Homebrew:</p>
+                    <code>brew install git</code>
+                    <p>Or you can download the installer from the official website.</p>
+                </li>
+            </ul>
+            </article>
+        </section>
+        <section class="main-section" id="New_repository">
+            <header>New repository</header>
+            <article>
+                <p>A <span class="text-bold">repository</span> is where all the information about a project is stored, including files, change history, and configuration. To create a new, local repository, navigate to the desired directory in your terminal and execute the following command:</p>
+                <code>git init</code>
+                <p>or</p>
+                <code>git init &lt;repository name&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Our_first_commit">
+            <header>Our first commit</header>
+            <article>
+                <p>A <span class="text-bold">commit</span> is a snapshot of your project at a specific point in time. To stage all new or modified files for the initial commit, use:</p>
+                <code>git add *</code>
+                <p>Then we commit these changes to the repository.</p>
+                <code>git commit -m "First commit"</code>
+                <p>Where <span class="code">-m</span> is used to add a brief description of the changes.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>For more information about Git, read "Pro Git" book, written by Scott Chacon and Ben Straub and published by Apress. This book is available <a href="https://git-scm.com/book/en/v2">here</a>.</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
