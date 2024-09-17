@@ -56,14 +56,31 @@
                 <code>git init &lt;repository name&gt;</code>
             </article>
         </section>
-        <section class="main-section" id="Our_first_commit">
-            <header>Our first commit</header>
+        <section class="main-section" id="First_commit">
+            <header>First commit</header>
             <article>
                 <p>A <span class="text-bold">commit</span> is a snapshot of your project at a specific point in time. To stage all new or modified files for the initial commit, use:</p>
                 <code>git add *</code>
                 <p>Then we commit these changes to the repository.</p>
                 <code>git commit -m "First commit"</code>
                 <p>Where <span class="code">-m</span> is used to add a brief description of the changes.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Creating_a_branch"></section>
+            <header>Creating a branch</header>
+            <article>
+                <p>
+                    A branch is a separate version of your repository. It's like creating a new working copy of your project. To create a new branch, run:
+                </p>
+                <code>
+                    git branch &lt;branch name&gt;
+                </code>
+                <p>
+                    To switch to another branch:
+                </p>
+                <code>
+                    git checkout &lt;branch name&gt;
+                </code>
             </article>
         </section>
         <section class="main-section" id="Reference">
