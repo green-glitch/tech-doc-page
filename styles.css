@@ -7,18 +7,19 @@ body {
 }
 
 main {
-    width: 70vw;
     padding-left: 10px;
 }
 
 header {
-    font-size: xx-large;
+    font-size: 5vh;
     font-weight: bold;
+    display: block;
 }
 
 article {
     padding-left: 10px;
-    margin-bottom: 10px;
+    font-size: 3vh;
+    min-height: 100px;
 }
 
 li {
@@ -34,11 +35,20 @@ code {
     border-left: black 3px solid;
 }
 
+section {
+    margin: auto;
+    width: 80vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .text-bold {
     font-weight: bold;
 }
 
 .code {
     font-family: monospace;
-    font-size: large;
+    font-size: 3vh;
 }
