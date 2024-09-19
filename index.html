@@ -7,8 +7,19 @@
     <title>Tech Doc Page</title>
 </head>
 <body>
+    <nav id="navbar">
+        <header>Tech Doc Page</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#VCS" class="nav-link">VCS</a>
+        <a href="#Installation" class="nav-link">Installation</a>
+        <a href="#Repository" class="nav-link">Repository</a>
+        <a href="#Commit" class="nav-link">Commit</a>
+        <a href="#Branch" class="nav-link">Branch</a>
+        <a href="#Merge" class="nav-link">Merge</a>
+        <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <article>
             <p>
@@ -16,8 +27,8 @@
             </p>
             </article>
         </section>
-        <section class="main-section" id="Git_as_a_Version_Control_System">
-            <header>Git as a Version Control System</header>
+        <section class="main-section" id="VCS">
+            <header>VCS</header><br>
             <article>
             <p>
                 A <span class="text-bold">version control system (VCS)</span> is a tool used to track changes in files, most commonly in software development projects. There are three main types of version control:
@@ -29,7 +40,7 @@
             </ul>
             </article>            
         </section>
-        <section class="main-section" id="How_to_install">
+        <section class="main-section" id="Installation">
             <header>Installation</header>
             <article>
             <ul>
@@ -46,8 +57,8 @@
             </ul>
             </article>
         </section>
-        <section class="main-section" id="New_repository">
-            <header>New repository</header>
+        <section class="main-section" id="Repository">
+            <header>Repository</header>
             <article>
                 <p>A <span class="text-bold">repository</span> is where all project information is stored, including files, change history, and configuration. To create a new, local repository, navigate to the desired directory in your terminal and execute the command:</p>
                 <code>git init</code>
@@ -56,8 +67,8 @@
                 <p>This is like creating a new, empty shelf in our library.</p>
             </article>
         </section>
-        <section class="main-section" id="First_commit">
-            <header>First commit</header>
+        <section class="main-section" id="Commit">
+            <header>Commit</header>
             <article>
                 <p>A <span class="text-bold">commit</span> is a snapshot of the changes in the repository. It's like adding a new book to the shelf. To add all new or modified files to the staging area, run:</p>
                 <code>git add *</code>
@@ -66,8 +77,8 @@
                 <p>Where <span class="code">-m</span> is used to add a brief description of the changes.</p>
             </article>
         </section>
-        <section class="main-section" id="Creating_a_branch"></section>
-            <header>Creating a branch</header>
+        <section class="main-section" id="Branch">
+            <header>Branch</header>
             <article>
                 <p>
                     A <span class="text-bold">branch</span> is an independent line of development for a project. Think of it as a new shelf in the library where you're working on a new version of a book. To create a new branch, execute:
@@ -83,7 +94,7 @@
                 </code>
             </article>
         </section>
-        <section class="main-section" id="Merge"></section>
+        <section class="main-section" id="Merge">
             <header>Merge</header>
             <article>
                 <p>A <span class="text-bold">merge</span> is the combination of two branches. It's like merging two books into one. To merge the <span class="code">new-branch</span> into the main branch (<span class="code">main</span>), first switch to the main branch:</p>
