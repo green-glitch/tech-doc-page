@@ -4,4 +4,4 @@ This is 3rd of 5 Certification Projects to earn Responsive Web Design Certificat
 For this project, I will build technical documentation page about Git.
 
 ## Link
-[click here](https://green-glitch.github.io/survey-form/)
+[click here](https://green-glitch.github.io/tech-doc-page/)
