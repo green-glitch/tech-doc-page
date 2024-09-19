@@ -4,18 +4,40 @@
     }
 }
 
+* {
+    font-family: sans-serif;
+}
+
 body {
     background-color: #fff;
 }
 
-* {
-    font-family: sans-serif;
+nav {
+    position: fixed;
+    background-color: #0f9;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 9px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 header {
     font-size: 5vh;
     font-weight: bold;
     display: block;
+    margin-bottom: 10px;
 }
 
 article {
@@ -53,11 +75,4 @@ section {
 .code {
     font-family: monospace;
     font-size: 3vh;
-}
-
-nav {
-    position: fixed;
-    background-color: white;
-    width: 100vw;
-    top: 0;
 }
