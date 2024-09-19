@@ -6,6 +6,9 @@
 
 * {
     font-family: sans-serif;
+    --green-color: #0f9;
+    --blue-color: #0e247e;
+
 }
 
 body {
@@ -14,7 +17,7 @@ body {
 
 nav {
     position: fixed;
-    background-color: #0f9;
+    background-color: var(--green-color);
     width: 100vw;
     top: 0;
     left: 0;
@@ -31,6 +34,19 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    width: 80vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section header {
+    color: var(--blue-color);
 }
 
 header {
@@ -59,13 +75,15 @@ code {
     border-left: black 3px solid;
 }
 
-section {
-    margin: auto;
-    width: 80vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    color: var(--blue-color);
+    font-size: 40px;
 }
 
 .text-bold {
