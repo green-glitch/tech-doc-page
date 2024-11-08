@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the document type and declares this as an HTML5 document -->
     <meta charset="UTF-8">
+    <!-- Sets the character encoding for the document to UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page scales correctly on different devices -->
+
+    <!-- Links an external CSS stylesheet for custom styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Links to Font Awesome for icons, providing a secure and anonymous link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Sets the page title -->
     <title>Tech Doc Page</title>
 </head>
 <body>
+    <!-- Navigation bar for quick access to different sections of the document -->
     <nav id="navbar">
         <header>Tech Doc Page</header>
+        <!-- Links that navigate to different sections of the page -->
         <a href="#Introduction" class="nav-link">Introduction</a>
         <a href="#VCS" class="nav-link">VCS</a>
         <a href="#Installation" class="nav-link">Installation</a>
@@ -19,99 +29,112 @@
         <a href="#Merge" class="nav-link">Merge</a>
         <a href="#Reference" class="nav-link">Reference</a>
     </nav>
+
+    <!-- Main content container -->
     <main id="main-doc">
+        <!-- Section for the Introduction -->
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <article>
-            <p>
-                <span class="text-bold">Git</span> is a powerful, distributed version control system designed to efficiently manage source code for various projects. Imagine Git as a library where all versions of your work are stored. Instead of having a single copy of a book (version of code), you have an entire shelf with different editions, each with its own date and change description. This allows you to revert to any point in your project's history, compare different versions, and even work on multiple ideas simultaneously without risking data loss.
-            </p>
+                <p>
+                    <!-- Highlighting the term 'Git' -->
+                    <span class="text-bold">Git</span> is a powerful, distributed version control system designed to...
+                    <!-- Descriptive text providing an analogy for Git's functionality -->
+                </p>
             </article>
         </section>
+
+        <!-- Section detailing Version Control Systems (VCS) -->
         <section class="main-section" id="VCS">
             <header>VCS</header><br>
             <article>
-            <p>
-                A <span class="text-bold">version control system (VCS)</span> is a tool used to track changes in files, most commonly in software development projects. There are three main types of version control:
-            </p>
-            <ul>
-                <li><span class="text-bold">Local:</span> All changes are stored on the local computer. This is the simplest but least secure method.</li>
-                <li><span class="text-bold">Centralized:</span> There is a single central server where all file versions are stored. Each user has access to the same copy.</li>
-                <li><span class="text-bold">Distributed:</span> Each user has a full copy of the repository on their computer. This allows for offline work and easier collaboration within teams. Git is such a system.</li>
-            </ul>
+                <p>
+                    <!-- Explanation of a version control system and its types -->
+                    A <span class="text-bold">version control system (VCS)</span> is a tool used to track changes...
+                </p>
+                <ul>
+                    <!-- Lists different types of VCS -->
+                    <li><span class="text-bold">Local:</span> All changes are stored on the local computer...</li>
+                    <li><span class="text-bold">Centralized:</span> There is a single central server...</li>
+                    <li><span class="text-bold">Distributed:</span> Each user has a full copy...</li>
+                </ul>
             </article>            
         </section>
+
+        <!-- Section for installation instructions -->
         <section class="main-section" id="Installation">
             <header>Installation</header>
             <article>
-            <ul>
-                <li><p><span class="text-bold">Linux:</span></p>
-                <code>sudo apt install git # Debian</code>
-                <p>or</p>
-                <code>dnf install git # Fedora</code></li>
-                <li><span class="text-bold">Windows:</span> Download the installer from the official Git website and follow the instructions.</li>
-                <li>
-                    <p><span class="text-bold">macOS:</span> You can install Git using Homebrew:</p>
+                <ul>
+                    <!-- Lists installation methods for different operating systems -->
+                    <li><p><span class="text-bold">Linux:</span></p>
+                    <code>sudo apt install git # Debian</code>
+                    <p>or</p>
+                    <code>dnf install git # Fedora</code></li>
+
+                    <li><span class="text-bold">Windows:</span> Download the installer...</li>
+
+                    <li><p><span class="text-bold">macOS:</span></p>
                     <code>brew install git</code>
-                    <p>Or download the installer from the official website.</p>
-                </li>
-            </ul>
+                    <p>Or download the installer from the official website.</p></li>
+                </ul>
             </article>
         </section>
+
+        <!-- Section explaining what a repository is -->
         <section class="main-section" id="Repository">
             <header>Repository</header>
             <article>
-                <p>A <span class="text-bold">repository</span> is where all project information is stored, including files, change history, and configuration. To create a new, local repository, navigate to the desired directory in your terminal and execute the command:</p>
+                <p>A <span class="text-bold">repository</span> is where all project information is stored...</p>
                 <code>git init</code>
                 <p>or</p>
                 <code>git init &lt;repository name&gt;</code>
-                <p>This is like creating a new, empty shelf in our library.</p>
             </article>
         </section>
+
+        <!-- Section about commits -->
         <section class="main-section" id="Commit">
             <header>Commit</header>
             <article>
-                <p>A <span class="text-bold">commit</span> is a snapshot of the changes in the repository. It's like adding a new book to the shelf. To add all new or modified files to the staging area, run:</p>
+                <p>A <span class="text-bold">commit</span> is a snapshot of the changes in the repository...</p>
                 <code>git add *</code>
                 <p>Then save these changes to the repository:</p>
                 <code>git commit -m "First commit"</code>
-                <p>Where <span class="code">-m</span> is used to add a brief description of the changes.</p>
             </article>
         </section>
+
+        <!-- Section about branches -->
         <section class="main-section" id="Branch">
             <header>Branch</header>
             <article>
-                <p>
-                    A <span class="text-bold">branch</span> is an independent line of development for a project. Think of it as a new shelf in the library where you're working on a new version of a book. To create a new branch, execute:
-                </p>
-                <code>
-                    git branch &lt;branch name&gt;
-                </code>
-                <p>
-                    To switch to a different branch:
-                </p>
-                <code>
-                    git checkout &lt;branch name&gt;
-                </code>
+                <p>A <span class="text-bold">branch</span> is an independent line of development...</p>
+                <code>git branch &lt;branch name&gt;</code>
+                <p>To switch to a different branch:</p>
+                <code>git checkout &lt;branch name&gt;</code>
             </article>
         </section>
+
+        <!-- Section about merging branches -->
         <section class="main-section" id="Merge">
             <header>Merge</header>
             <article>
-                <p>A <span class="text-bold">merge</span> is the combination of two branches. It's like merging two books into one. To merge the <span class="code">new-branch</span> into the main branch (<span class="code">main</span>), first switch to the main branch:</p>
+                <p>A <span class="text-bold">merge</span> is the combination of two branches...</p>
                 <code>git checkout main</code>
                 <p>Then perform the merge:</p>
                 <code>git merge new-branch</code>
-                <p>If there are conflicts, you'll need to resolve them manually.</p>
             </article>
         </section>
+
+        <!-- Section for references -->
         <section class="main-section" id="Reference">
             <header>Reference</header>
             <article>
-                <p>For more information about Git, read "Pro Git" book, written by Scott Chacon and Ben Straub and published by Apress. This book is available <a href="https://git-scm.com/book/en/v2">here</a>.</p>
+                <p>For more information about Git, read "Pro Git" book... <a href="https://git-scm.com/book/en/v2">here</a>.</p>
             </article>
         </section>
     </main>
+
+    <!-- Footer section with a GitHub link -->
     <footer>
         <a href="https://github.com/green-glitch/tech-doc-page"><i class="fa-brands fa-github"></i></a>
     </footer>
