@@ -1,8 +1,12 @@
 # Tech Doc Page 📝
 
-## Project Structure 🗂️
-This project is a technical documentation webpage, designed to provide detailed insights into version control systems, specifically focusing on Git. The repository includes the following main files:
+## About
+- **Description:** A website presenting a guide on how to use the Git version control system. This project was created as an example of developing technical documentation and implementing it as a clear, readable webpage.
+- **My role:** website implementation, layout design, content formatting, preparation of the web version.
+- **Content source:** excerpts from the book Pro Git by Scott Chacon and Ben Straub, published under the CC BY-NC-SA 3.0 license.
+- **Project license:** The work is available under the same terms – CC BY-NC-SA 3.0.
 
+## Project Structure 🗂️
 - **index.html**: 📄 Contains the structure and content of the webpage, including sections such as Introduction, VCS, Installation, Repository, Commit, Branch, Merge, and Reference.
 - **styles.css**: 🎨 Custom CSS for styling the page, including responsive design features and visual enhancements.
 
